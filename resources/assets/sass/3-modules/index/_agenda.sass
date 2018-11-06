@@ -1,0 +1,180 @@
+section#agenda
+    padding: 0
+    +clearfix
+    +backImage('/images/bg-dates4.jpg', center)
+
+    .wrap-agenda
+        +full
+        .titulo-agenda
+            margin-left: span(7 wide of 16)
+            +breakpoint(0 $narrow)
+                margin-left: span(4.8 wide of 16)
+            +breakpoint($narrow $small)
+                margin-left: span(5.8 wide of 16)
+            +breakpoint($small $medium)
+                margin-left: span(6.3 wide of 16)
+            +breakpoint($medium $wide)
+                margin-left: span(6.5 wide of 16)
+            +breakpoint($wide $widee)
+                margin-left: span(7 wide of 16)
+            +breakpoint($widee $wider)
+                margin-left: span(7 wide of 16)
+            +breakpoint($wider $widerr)
+                margin-left: span(8 wide of 16)
+            +breakpoint($wider $widerr1)
+                margin-left: span(7.38 wide of 16)
+
+            h1
+                margin-bottom: 20px
+                margin-top: 20px
+                margin-right: 0
+                margin-left: 0
+                padding-left: 0
+                +breakpoint(0 $narrow)
+                    +title-index(40, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($narrow $small)
+                    +title-index(40, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($small $medium)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 10px
+                +breakpoint($medium $wide)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($wide $widee)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($widee $wider)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+
+                +breakpoint($wider $widerr)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($wider $widerr1)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+        .container-agenda
+            +container
+            margin-top: 2%
+            height: 500px //altura adicionadda aqui por causa do valor pouca agenda aparcer fundo imagem
+            .agenda-tbl
+                +container
+                .column-date
+                    +span(2)
+                    +breakpoint(0 $narrow)
+                        +span(16)
+                    +breakpoint($narrow $small)
+                        +span(16)
+                    h2.e-date
+                        +font-size(25)
+                        color: red
+                        font-family: $font-family5
+                        font-weight: $bold600
+                        +breakpoint($small $medium)
+                            +font-size(15)
+                .column-evento
+                    +span(5)
+                    +breakpoint(0 $narrow)
+                        +span(16)
+                        +pad(1)
+                    +breakpoint($narrow $small)
+                        +span(16)
+                        +pad(1)
+
+                    h2.e-evento
+                        color: gray
+                        +font-size(20)
+                        font-family: $font-family5
+                        font-weight: $bold600
+                        text-align: left
+                        text-transform: uppercase
+                        +breakpoint(0 $narrow)
+                            text-align: center
+                        +breakpoint($narrow $small)
+                            text-align: center
+                        +breakpoint($small $medium)
+                            +font-size(15)
+                .column-estado
+                    +span(2)
+                    text-align: center
+                    padding-right: 4.4%
+                    +breakpoint(0 $narrow)
+                        +span(16)
+                        text-align: center
+                    +breakpoint($narrow $small)
+                        +span(16)
+                        text-align: center
+                    h2.e-estado
+                        color: gray
+                        +font-size(20)
+                        font-family: $font-family5
+                        font-weight: $bold600
+                        text-transform: uppercase
+                        +breakpoint($small $medium)
+                            +font-size(15)
+                .column-local
+                    +span(6)
+                    padding-left: 3%
+                    +breakpoint(0 $narrow)
+                        +span(16)
+                        +pad(1)
+                    +breakpoint($narrow $small)
+                        +span(16)
+                        +pad(1)
+                    +breakpoint($small $medium)
+                        +font-size(15)
+                    h2.e-local
+                        color: lighten(gray, 25%)
+                        +font-size(20)
+                        text-align: left
+                        font-family: $font-family5
+                        font-weight: $bold600
+                        text-transform: capitalize
+                        +breakpoint(0 $narrow)
+                            text-align: center
+                        +breakpoint($narrow $small)
+                            text-align: center
+                        +breakpoint($small $medium)
+                            +font-size(15)
+            .sem-agenda
+                h2
+                    color: $white
+                    +font-size(20)
+                    padding: 0 0 0 20px
+
+
+

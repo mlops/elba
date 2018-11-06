@@ -1,0 +1,14 @@
+footer {
+  color: red; }
+  footer .shoes {
+    color: orange; }
+
+/* comment */
+header {
+  color: green; }
+
+.mixinuser {
+  color: magenta; }
+
+body {
+  color: green; }

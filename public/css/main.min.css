@@ -1,0 +1,271 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: blue;
+  background-color: black; }
+  h2 a {
+    color: #2980b9;
+    text-decoration: none; }
+
+.site-header,
+.site-footer {
+  background: rgba(234, 159, 195, 0.8); }
+
+.site-header {
+  color: #555;
+  text-decoration: none; }
+
+.content {
+  margin-top: 5vh;
+  padding-bottom: 1rem;
+  background: rgba(113, 218, 210, 0.8); }
+
+.sidebar {
+  margin-top: 5vh;
+  background: rgba(250, 231, 179, 0.8);
+  padding-bottom: 1rem;
+  color: #666;
+  padding-left: 1rem;
+  line-height: 2;
+  text-decoration: none; }
+
+.widget {
+  background: rgba(240, 150, 113, 0.8); }
+
+.site-footer {
+  margin-top: 5vh; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.wrap {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-linear-gradient(left, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25));
+  background-size: 6.25%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top; }
+  .wrap:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.logo {
+  float: left;
+  line-height: 2rem;
+  font-size: 1.5rem; }
+
+nav {
+  float: right;
+  background: rgba(113, 218, 210, 0.8); }
+  nav li {
+    list-style: none;
+    float: left;
+    margin-left: 1em;
+    line-height: 2rem; }
+
+.content {
+  width: 75%;
+  float: left;
+  padding-left: 0.625%;
+  padding-right: 0.625%; }
+  .content .gallery {
+    width: 83.33333%;
+    margin-left: 8.33333%;
+    margin-right: auto; }
+    .content .gallery:after {
+      content: " ";
+      display: block;
+      clear: both; }
+    .content .gallery .gallery__item {
+      width: 20%;
+      float: left;
+      padding-left: 1%;
+      padding-right: 1%;
+      margin-bottom: 1%; }
+      .content .gallery .gallery__item:nth-child(5n) {
+        float: right; }
+
+.sidebar {
+  width: 25%;
+  float: right;
+  padding-left: 0.625%;
+  padding-right: 0.625%; }
+
+.widget {
+  width: 25%;
+  float: left;
+  padding-left: 0.625%;
+  padding-right: 0.625%; }
+  .widget:nth-child(4n) {
+    float: right; }
+
+/*# sourceMappingURL=maps/main.min.css.map */

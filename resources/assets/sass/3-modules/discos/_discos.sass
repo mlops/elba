@@ -1,0 +1,101 @@
+.container-alldiscos
+    +full
+    +clearfix
+    position: relative
+    padding: 0
+    margin: 0
+    .wrap-alldiscos
+        position: relative
+        +clearfix
+        .wrap-img
+            position: relative
+            overflow: hidden
+            img
+                margin: 0px
+                padding: 0px
+                min-width: 100%
+                width: 100%
+                float: left
+                +clearfix
+                +single-transition(all, .5s, ease-in-out)
+            .caption
+                cursor: pointer
+                position: absolute
+                z-index: 11
+                height: span(16)
+                +full
+                margin: 0 auto
+                text-align: center
+
+
+                .caption-text
+                    opacity: 0
+                    color: $white
+                    padding-top: 8%
+                    font-family: $font-family4
+                    +font-size(50)
+                    +breakpoint(0 $narrow)
+                        +font-size(10)
+                        padding-top: 1%
+                        opacity: 1
+                        p
+                            margin-top: -10px
+                            +font-size(20)
+                    +breakpoint($narrow $small)
+                        +font-size(15)
+                        padding-top: 1%
+                        opacity: 1
+                        p
+                            margin-top: -5px
+                            +font-size(20)
+                    +breakpoint($small $medium)
+                        +font-size(17)
+                        padding-top: 5%
+                        opacity: 1
+                        p
+                            margin-top: 10px
+                            +font-size(30)
+                    +breakpoint($medium $wide)
+                        +font-size(30)
+                        padding-top: 1%
+                        opacity: 0
+                        p
+                            margin-top: 10px
+                            +font-size(35)
+                    +breakpoint($wide $widee)
+                        +font-size(30)
+                        padding-top: 5%
+                        opacity: 0
+                        p
+                            margin-top: 0
+                            +font-size(40)
+                    +breakpoint($widee $wider)
+                        +font-size(30)
+                        padding-top: 5%
+                        opacity: 0
+                        p
+                            margin-top: 0
+                            +font-size(40)
+                    +breakpoint($wider $widerr1)
+                        +font-size(30)
+                        padding-top: 5%
+                        opacity: 0
+                        p
+                            margin-top: 0
+                            +font-size(40)
+
+
+            &:hover img
+                opacity: 0.5
+                transform: scale(1.15, 1.15)
+                -webkit-transform: scale(1.15, 1.15)
+                -moz-transform: scale(1.15, 1.15)
+                -ms-transform: scale(1.15, 1.15)
+                -o-transform: scale(1.15, 1.15)
+            &:hover .caption-text
+                opacity: 1
+                +single-transition(all, .5s, ease-in-out)
+
+
+
+

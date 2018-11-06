@@ -1,0 +1,64 @@
+%lrg
+    font-size: 1.2em
+    padding: 0.5em 1%
+%sml
+    font-size: 0.8em
+    padding: 0.15em 1%
+
+
+%btn
+    font: 600 1em/1.5 "Arial", Verdana, sans-serif
+    float: left
+    display: inline-block
+    padding: 0.3em 1%
+    text-transform: uppercase
+    //+border-radius(10px)
+        &:hover
+            cursor: pointer
+        &.large
+            @extend %lrg
+        &.small
+            @extend %sml
+
+
+    .btn-primary
+        @extend %btn
+        //@extend %lrg
+        background: $primary-color
+        color: darken($primary-color, 20%)
+        &:hover
+            background: darken($primary-color, 40%)
+            color: $primary-color
+
+    .btn-secundary
+        @extend %btn
+        background: $accent-color
+        color: darken($accent-color, 20%)
+        &:hover
+            background: darken($accent-color, 40%)
+            color: $accent-color
+    
+    .btn-warning
+        @extend %btn
+        background: $yellow
+    .btn-sucess
+        @extend %btn
+        background: $blue
+    .btn-fail
+        @extend %btn
+        background: $red
+
+
+
+
+
+input
+    &[type="text"]
+        border: 1px solid darken($primary-color, 40%)
+        padding: 0.5em 1%
+        +border-radius(20px)
+        &.large
+            @extend %lrg
+        &.small
+            @extend %sml
+

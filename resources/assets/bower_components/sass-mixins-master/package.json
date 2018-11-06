@@ -1,0 +1,33 @@
+{
+  "name": "sass-mixins-functions",
+  "description": "Sass mixins and functions",
+  "keywords": [
+    "sass",
+    "mixins",
+    "functions"
+  ],
+  "version": "1.0.0",
+  "homepage": "https://github.com/tiagoporto/sass-mixins-functions",
+  "author": {
+    "name": "Tiago Porto",
+    "url": "http://tiagoporto.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiagoporto/sass-mixins-functions.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^1.5.5",
+    "gulp": "^3.8.8",
+    "gulp-cached": "^1.0.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.4.1",
+    "gulp-notify": "^1.8.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-uglify": "^1.0.1",
+    "gulp-watch": "^1.0.7",
+    "run-sequence": "^1.0.1"
+  }
+}

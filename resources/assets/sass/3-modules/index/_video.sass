@@ -1,0 +1,38 @@
+figure.header-unit
+    position: relative
+    +clearfix
+    width: 100%
+    margin: 0 auto -7px auto
+    .txtfade
+        position: absolute
+        z-index: 9999
+        text-align: center
+        top: span(3)
+        left: 0%
+        +full
+        .fadey
+            display: none
+            padding: 15px
+            .txt-video
+                font-family: $font-family6
+                font-weight: $bold600
+                text-align: center
+                text-transform: uppercase
+                color: darken(rgba($orange, 0.5),10)
+                width: 100%
+                +font-size(200)
+                +breakpoint(0 $narrow)
+                    +font-size(30)
+                    padding-top: span(0.5)
+                +breakpoint($narrow $small)
+                    +font-size(60)
+                    padding-top: span(1)
+                +breakpoint($small $medium)
+                    +font-size(100)
+                    padding-top: 5px
+                +breakpoint($medium $wide)
+                    +font-size(120)
+                    padding-top: 5px
+                +breakpoint($wide $wider)
+                    +font-size(200)
+                    padding-top: 5px

@@ -1,0 +1,63 @@
+section#cds
+    //background-color: $blue
+    +clearfix
+    .wrap-cds
+        +full
+        margin-top: 0
+        height: auto
+        position: relative
+        background-color: $fundo-color-el
+        padding: 0
+        padding-bottom: 20px
+        .titulo-discos
+            +clearfix
+            h1
+                +title-index(60, $red, 8px)
+                float: left
+                margin: 10px 0 30px 30px
+                +breakpoint(0 $narrow)
+                    +title-index(40, $red, 5px)
+                    margin-bottom: 20px
+
+    .discos
+        +with-layout(24 1/4 inside)
+        img
+            min-width: 100%
+            width: 100%
+            +span(3)
+            //background-color: $green
+            //padding: 30px
+            padding: 0
+            margin: 0
+            position: relative
+            display: block
+        +breakpoint(0 $narrow)
+            +span(8)
+            padding-left: 0
+            padding-right: 0
+            margin: 0
+            margin-top: -8px
+        +breakpoint($narrow $small)
+            +span(8)
+            padding-left: 0
+            padding-right: 0
+        +breakpoint($small $medium)
+            +span(3.2)
+            padding-left: 0
+            padding-right: 0
+        +breakpoint($medium $wide)
+            +span(3.2)
+            padding-left: 0
+            padding-right: 0
+        +breakpoint($wide $widee)
+            +span(3.2)
+            padding-left: 0
+            padding-right: 0
+        +breakpoint($widee $wider)
+            +span(3.2)
+            padding-left: 0
+            padding-right: 0
+        +breakpoint($wider $widerr)
+            +span(3.2)
+            padding-left: 0
+            padding-right: 0

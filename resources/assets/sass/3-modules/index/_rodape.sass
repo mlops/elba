@@ -1,0 +1,101 @@
+#rodape
+    +full
+    background: $fundo-color-el
+    padding: 30px 0 0 0
+    margin: 0
+    .social-rodape
+        text-align: center
+        +container
+        margin: 0 auto
+        //background-color: red
+        position: relative
+        .social-nav
+            text-align: center
+            +breakpoint(0 $narrow)
+                margin-left: -40px
+            +breakpoint($narrow $small)
+                margin-left: -10px
+            .social-nav--item
+                list-style: none
+                display: inline-block
+                padding: 0
+                +breakpoint(0 $narrow)
+                    margin-left: -10px
+                +breakpoint($narrow $small)
+                    margin-left: -40px
+                a
+                    color: $black
+                    display: block
+                    width: 100%
+                    padding: 30px
+                    +breakpoint(0 $narrow)
+                        padding: 7px
+                .fa-facebook
+                    &:before
+                        content: '\f09a'
+                        @extend .social-ex2
+
+                .fa-twitter
+                    &:before
+                        content: '\f099'
+                        @extend .social-ex2
+                .fa-youtube
+                    &:before
+                        content: '\f167'
+                        @extend .social-ex2
+                .fa-instagram
+                    &:before
+                        content: '\f16d'
+                        @extend .social-ex2
+                .fa-flickr
+                    &:before
+                        content: '\f16e'
+                        @extend .social-ex2
+
+
+    .copyright
+        text-align: center
+        //background-color: #FFF
+        color: $black
+        padding: 10px
+        +container
+        margin: 0 auto
+        h2
+            +font-size(20)
+            font-style: $font-family1
+            line-height: 2
+            text-transform: uppercase
+            +breakpoint(0 $narrow)
+                +font-size(10)
+            +breakpoint($narrow $small)
+                +font-size(10)
+            +breakpoint($small $wide)
+                +font-size(10)
+            +breakpoint($small $medium)
+                +font-size(10)
+            +breakpoint($medium $wide)
+                +font-size(10)
+            +breakpoint($wide $wider)
+                +font-size(15)
+
+
+
+
+
+.social-ex2
+    @extend .social-ex
+    &:hover
+        color: red
+        +single-transition(all, .3s, ease-in-out)
+    +breakpoint(0 $narrow)
+        +font-size(40)
+    +breakpoint($narrow $small)
+        +font-size(50)
+    +breakpoint($small $wide)
+        +font-size(50)
+    +breakpoint($small $medium)
+        +font-size(50)
+    +breakpoint($medium $wide)
+        +font-size(50)
+    +breakpoint($wide $wider)
+        +font-size(50)

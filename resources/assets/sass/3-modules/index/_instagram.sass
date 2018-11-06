@@ -1,0 +1,120 @@
+section#instagram
+    +clearfix
+    background-color: $black
+    margin: 0
+    padding: 0
+    .wrap-instagram
+        +full
+        margin: 0
+        padding: 0
+        .titulo-instagram
+            margin-left: span(7 wide of 16)
+            +breakpoint(0 $narrow)
+                margin-left: span(3.5 wide of 16)
+            +breakpoint($narrow $small)
+                margin-left: span(5 wide of 16)
+            +breakpoint($small $medium)
+                margin-left: span(5.5 wide of 16)
+            +breakpoint($medium $wide)
+                margin-left: span(6.5 wide of 16)
+            +breakpoint($wide $widee)
+                margin-left: span(7 wide of 16)
+            +breakpoint($widee $wider)
+                margin-left: span(6.7 wide of 16)
+            +breakpoint($wider $widerr)
+                margin-left: span(7.2 wide of 16)
+            +breakpoint($wider $widerr1)
+                margin-left: span(7.2 wide of 16)
+                //background-color: orange
+
+            h1
+                margin-bottom: 20px
+                margin-top: 20px
+                margin-right: 0
+                margin-left: 0
+                padding-left: 0
+                +breakpoint(0 $narrow)
+                    +title-index(40, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($narrow $small)
+                    +title-index(40, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($small $medium)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 10px
+                +breakpoint($medium $wide)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($wide $widee)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+                +breakpoint($widee $wider)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+
+                +breakpoint($wider $widerr1)
+                    +title-index(50, $red, 5px)
+                    margin-bottom: 20px
+                    margin-top: 20px
+                    margin-right: 0
+                    margin-left: 0
+                    padding-left: 0
+
+
+
+
+        .container-instagram
+            +full
+            margin-top: 0.4%
+            padding: 0
+            float: none
+            .gallery
+                +with-layout($susy-instagram)
+                    width: span(12)
+                    margin-left: auto
+                    margin-right: auto
+                    +clearfix
+                    margin-bottom: 20px
+                    .gallery__item
+                        margin-top: -8px
+                        img
+                            width: 100%
+                        +span( 3 of 12 )
+                            +breakpoint(0 $narrow)
+                                +span(6 of 12)
+                            +breakpoint($narrow $small)
+                                +span(6 of 12)
+                            +breakpoint($small $medium)
+                                +span(6 of 12)
+                            +breakpoint($medium $wide)
+                                +span(3 of 12)
+                            &:nth-child(5n)
+                                +first
+                            &:hover
+                                filter: grayscale(1)
+                                transition-property: filter
+                                transition-duration: 1s

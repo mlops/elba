@@ -1,0 +1,128 @@
+//  Headings
+
+// .gigantic, .huge, .large, .bigger, .big,
+// h1, h2, h3, h4, h5, h6
+//   color: $accent-color
+//   font-weight: bold
+
+// .gigantic
+//   font-size: 110px
+//   line-height: 1.09
+//   letter-spacing: -2px
+
+// .huge, h1
+//   font-size: 68px
+//   line-height: 1.05
+//   letter-spacing: -1px
+
+// .large, h2
+//   font-size: 42px
+//   line-height: 1.14
+
+// .bigger, h3
+//   font-size: 26px
+//   line-height: 1.38
+
+// .big, h4
+//   font-size: 22px
+//   line-height: 1.38
+
+// .small, small
+//   font-size: 10px
+//   line-height: 1.2
+
+
+// Basic Text Style
+
+// p
+//   margin: 0 0 20px 0
+
+
+
+// hr
+//   border: solid #ddd
+//   border-width: 1px 0 0
+//   clear: both
+//   margin: 10px 0 30px
+//   height: 0
+
+p
+  font-size: $em-base
+  line-height: 1.5
+  //margin-bottom: $em-base*2
+  font-weight: $thin200
+
+
+// h6
+//   font-size: $em-base*0.8
+//   line-height: 1.5
+//   margin-bottom: $em-base*1.3
+//   font-weight: $normal300
+
+// h5
+//   font-size: $em-base*1.2
+//   line-height: 1.4
+//   margin: $em-base*1.3 0
+//   font-weight: $normal300
+
+
+// h4
+//   font-size: $em-base*1.4
+//   line-height: 1.3
+//   margin: $em-base*1.3 0
+//   font-weight: $normal300
+
+h3
+  font-size: $em-base*1.6
+  line-height: 1.3
+  margin: $em-base*1.3 0
+  font-weight: $normal300
+
+h2
+  font-size: $em-base*1.8
+  line-height: 1.3
+  margin: $em-base*1.3 0
+  font-weight: $normal300
+
+h1
+  font-size: $em-base*2
+  line-height: 1.3
+  margin: $em-base*1.3 0
+  font-weight: $normal300
+
+
+em
+  font-style: italic
+
+strong
+  font-weight: bold
+
+ol,
+ul
+  list-style: none
+
+
+
+// mixin titulo vermelho index
+=title-index($fontSize, $color, $espessura)
+  margin: 20px 0 0 30px
+  font-family: $font-family4
+  line-height: 130.90909% !important
+  letter-spacing: em(1px, $base-font-size)
+  text-transform: uppercase
+  font-weight: $bold600
+  +font-size($fontSize)
+  display: inline-block
+  border-top: solid $espessura darken($color, 20)
+  border-bottom: solid $espessura darken($color, 20)
+  color: darken($color, 20)
+
+
+/////lista udaso no disco flor da paraiba
+
+.list-style-disc
+  list-style-type: disc
+  font-family: $font-family5
+  +font-size(16)
+  padding: 10px 0 0 65px
+  color: $white

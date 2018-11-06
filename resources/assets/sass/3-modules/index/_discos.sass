@@ -1,0 +1,81 @@
+section#cds
+    //background-color: $blue
+    +clearfix
+    .wrap-cds
+        +full
+        margin-top: 0
+        height: auto
+        position: relative
+        background-color: $fundo-color-el
+        .titulo-discos
+            +clearfix
+            h1
+                +title-index(80, $red, 8px)
+                float: left
+    .discos
+        +with-layout(24 1/4 inside)
+            +span(8)
+            //background-color: $green
+            //padding: 30px
+            padding: 0 10px 0 10px
+            position: relative
+            display: block
+            .disco-ano
+                font-family: $font-family5
+                +font-size(30)
+                font-weight: $normal400
+                display: block
+                width: 335px
+                padding-top: 20px
+                margin-bottom: -20px
+            .disco-nome
+                +font-size(40)
+                height: 70px
+                font-family: $font-family6
+                text-transform: none
+                font-weight: $bold600
+                line-height: 1.27273em
+                display: block
+                width: 335px
+                margin-top: 20px
+                +breakpoint(0 $narrow)
+                    width: 300px
+                +breakpoint($narrow $small)
+                    width: span(22)
+                +breakpoint($small $medium)
+                    width: span(23)
+            .disco-imagem
+                padding-bottom: span(2)
+            +breakpoint(0 $narrow)
+                +span(24)
+                padding-left: span(1)
+                padding-right: span(1)
+                margin-top: span(-1)
+                .disco-nome
+                    +font-size(28)
+                .disco-imagem
+                    margin-top: span(-2)
+
+            +breakpoint($narrow $small)
+                +span(24)
+                padding-left: span(1)
+                padding-right: span(1)
+                margin-top: span(-1)
+                .disco-ano
+                    +font-size(40)
+                .disco-nome
+                    +font-size(50)
+                .disco-imagem
+                    margin-top: span(2)
+
+            +breakpoint($small $medium)
+                +span(12)
+                padding-left: span(1)
+                padding-right: span(1)
+                margin-top: -20px
+                .disco-ano
+                    +font-size(30)
+                .disco-nome
+                    +font-size(40)
+                .disco-imagem
+                    margin-top: span(-1)

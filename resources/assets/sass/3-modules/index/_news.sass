@@ -1,0 +1,121 @@
+#news
+    +full
+    margin-top: 0
+    //background-color: $dark
+    float: none
+    padding: 0
+    +clearfix
+    .wrap-news
+        background-color: $fundo-color-el
+        h1
+            +title-index(60, $red, 8px)
+            +breakpoint(0 $narrow)
+                +title-index(40, $red, 5px)
+                margin-left: 30px
+
+        span
+            font-family: $font-family4
+            +font-size(30)
+            color: rgba($dark,0.7)
+            font-weight: $bold600
+            float: right
+            padding: 80px 20px 0 0
+            line-height: 115.9%
+            +breakpoint(0 $narrow)
+                padding: 10px 10px 20px 10px
+                +font-size(28)
+            +breakpoint($narrow $small)
+                padding-top: 10px
+            +breakpoint($small $medium)
+                padding-top: 60px
+            +breakpoint($medium $wide)
+                padding-top: 70px
+        section
+            padding: 20px 0 0 0
+            +clearfix
+            .grid
+                padding: 15px 0 0 0
+                display: block
+                position: relative
+                width: span(16)
+                .title-box
+                    position: relative
+                    display: inline-block
+                    +span(8)
+                    padding: 0
+                    background-color: black
+                    overflow: hidden
+                    a
+                        text-decoration: none
+                    img
+                        position: relative
+                        display: inline-block
+                        max-width: none
+                        width: calc(100% + 50px)
+                        transition: opacity 0.35s, -webkit-transform 0.35s
+                        transition: opacity 0.35s, transform 0.35s
+                        -webkit-transform: translate3d(-40px, 0, 0)
+                        transform: translate3d(-40px, 0, 0)
+
+                        +breakpoint($narrow $medium)
+                            -webkit-transform: translate3d(-20px, 0, 0)
+                            transform: translate3d(-20px, 0, 0)
+                        &:hover
+                            -webkit-transform: translate3d(0, 0, 0)
+                            transform: translate3d(0, 0, 0)
+
+                    h3
+                        position: relative
+                        height: 145px
+                        +full
+                        margin: -145px 0 0 0
+                        font-family: $font-family5
+                        +font-size(20)
+                        line-height: 150%
+                        padding: 20px
+                        color: WhiteSmoke
+                        font-weight: $normal300
+                        background: rgba(0, 0, 0, 0.8)
+                        text-align: center
+                    +breakpoint(0 $narrow)
+                        +span(16)
+                        h3
+                            +font-size(12)
+                            height: 90px
+                            margin: -90px 0 0 -3px
+                            line-height: 18px
+                            width: 102%
+
+                    +breakpoint($narrow $small)
+                        +span(16)
+                        h3
+                            +font-size(15)
+                            height: 90px
+                            margin: -90px 0 0 -2px
+                            line-height: 20px
+                            width: 102%
+                    +breakpoint($small $medium)
+                        +span(16)
+                        h3
+                            +font-size(15)
+                            height: 90px
+                            margin: -90px 0 0 -7px
+                            line-height: 30px
+                            width: 102%
+                    +breakpoint($medium $wide)
+                        h3
+                            +font-size(15)
+                            height: 90px
+                            margin: -90px 0 0 -7px
+                            line-height: 25px
+                            width: 102%
+                            padding-top: 10px
+
+
+span.chamada-img
+    width: 100%
+    background-color: red
+    margin: 0
+    padding: 0
+    img
+        width: 100%

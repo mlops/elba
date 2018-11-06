@@ -1,0 +1,294 @@
+#discos-bg
+    +full
+    background-color: $white
+    margin: 0
+    padding: 0
+    +clearfix
+    .discos-dt
+        margin-bottom: 2%
+        .discos-dt-subheader
+            color: $black
+            +span(16)
+            text-align: left
+            //background-color: #FFF
+            font-family: $font-family5
+            +font-size(30)
+
+            .discos-dt-nome_disco
+                +span(13)
+                font-weight: $bold600
+                text-transform: uppercase
+                +breakpoint(0 $narrow)
+                    +span(13)
+                    +font-size(30)
+                +breakpoint($narrow $small)
+                    +span(13)
+                    +font-size(30)
+                +breakpoint($small $medium)
+                    +span(14)
+                    +font-size(40)
+            .discos-dt-ano
+                +span(3 last)
+                text-align: right
+                font-weight: $bold600
+                +breakpoint(0 $narrow)
+                    +span(3 last)
+                    +font-size(30)
+                +breakpoint($narrow $small)
+                    +span(3 last)
+                    +font-size(30)
+                +breakpoint($small $medium)
+                    +span(2 last)
+                    +font-size(40)
+    .discos-wrap
+        +span(16)
+        //background-color: green
+        .discos-tracks-item
+            border-bottom: 1px dotted black
+            +breakpoint(0 $narrow)
+                margin-top: 1%
+            +breakpoint($narrow $small)
+                margin-top: 2%
+            .discos-tracks-col-left
+                +span(5)
+                padding-top: 2%
+                //background-color: green
+                .post-thumb
+                    width: 100%
+                    //background-color: red
+                +breakpoint(0 $narrow)
+                    +span(16)
+                    margin-top: 2%
+                +breakpoint($narrow $small)
+                    +span(16)
+                    margin-top: 2%
+                .album-purchase-links
+                    display: inline-block
+                    +font-size(14)
+                    font-family: $font-family5
+                    -webkit-font-smoothing: antialiased
+                    letter-spacing: 0.05em
+                    line-height: 20px
+                    padding-right: 1.5%
+                    text-align: left
+                    ul
+                        li
+                            margin: 0
+                            padding: 0
+                            margin-left: -20px
+                            p
+                                line-height: 1.6em
+                                word-spacing: -0.1em
+                                margin: 2px 0 0 0
+                            a
+                                background: #000
+                                color: #fff
+                                display: block
+                                font-size: 12px
+                                padding: 8px 0
+                                text-decoration: none
+                                text-align: center
+                                text-transform: uppercase
+                                width: 95%
+                                margin-bottom: 20px
+                        .sbr-disco
+                            font-style: italic
+
+
+
+            .discos-tracks-col-right
+                +span(11)
+                padding-top: 2%
+                //background-color: orange
+                +breakpoint(0 $narrow)
+                    +span(16)
+                +breakpoint($narrow $small)
+                    +span(16)
+                ul
+                    padding: 0
+                    margin: 0
+                    list-style: none
+                    .track-listing-item
+                        list-style: none
+                        .stream-controls
+                            ul.playlist
+                                li
+                                    font-size: 1em
+                                    font-family: "Open Sans", "Helvetica-neue", arial, verdana sans-serif
+                                    -webkit-font-smoothing: antialiased
+                                    border-bottom: 1px dotted black
+                                    padding: 0.25em 0.5em 1.6em 0.5em
+                                    a.disco-nome
+                                        color: $black
+                                        font-weight: $normal500
+                                    .compositor
+                                        font-family: $font-family5
+                                        +font-size(16)
+                                        margin-right: 5%
+                                        font-style: italic
+                                        margin-top: 8px
+                                        font-weight: $normal300
+
+                                    .st-arrow
+                                        font-size: 1em
+                                        margin-right: 1%
+                                        font-style: normal
+                                        margin-top: 8px
+                                        float: right
+                                        clear: both
+                                        color: $black
+                                        cursor: pointer
+                                    .stream-letra
+                                        overflow: hidden
+                                        display: none
+                                        width: 100%
+                                        line-height: 150%
+                                        letter-spacing: 0.1px
+                                        color: $black
+                                        font-weight: $bold600
+                                        p
+                                            margin: 0
+                                            padding: 0
+                                            font-size: 1em
+                                            line-height: 1.5
+                                            font-weight: 200
+                                        em
+                                            line-height: 1.3
+#extras-bg
+    +full
+    margin: 0
+    padding: 0
+    background-color: $black
+    +clearfix
+    .extras-release
+        +span(8)
+        padding-bottom: 2%
+        padding-top: 2%
+        +breakpoint(0 $narrow)
+            +span(16)
+        +breakpoint($narrow $small)
+            +span(16)
+
+        p
+            font-family: $font-family5
+            +font-size(16)
+            padding: 10px 0 0 20px
+            color: $white
+            line-height: 150%
+            margin: 0
+            +breakpoint(0 $narrow)
+                margin-right: 20px
+        img
+            width: 100%
+            min-width: 100%
+            float: left
+    .extras-imgs
+        +span(8)
+        margin: 0
+        padding: 0 1em
+        padding-bottom: 2%
+        +breakpoint(0 $narrow)
+            +span(16)
+        +breakpoint($narrow $small)
+            +span(16)
+        .extras-fotos
+            +span(16)
+            margin: 0
+            +breakpoint(0 $narrow)
+                padding-left: 5%
+            h2
+                color: $white
+                +font-size(30)
+                padding-left: 27px
+                font-family: $font-family5
+            a
+                float: left
+                width: 250px
+                margin-top: 10px
+                margin-left: 30px
+                margin-bottom: 10px
+                +breakpoint(0 $narrow)
+                    margin-left: 2.5%
+                +breakpoint($narrow $small)
+                    +span(6)
+                img
+                    width: 100%
+                    min-width: 100%
+
+        .extras-k7
+            +span(16)
+            margin: 0
+            padding: 0 1em
+            padding-bottom: 2%
+            //background-color: $white
+            h2
+                color: $white
+                +font-size(30)
+                padding-left: 27px
+                font-family: $font-family5
+            a
+                float: left
+                width: 250px
+                margin-top: 10px
+                margin-left: 30px
+                margin-bottom: 10px
+                img
+                    width: 100%
+                    min-width: 100%
+
+
+hr
+    margin-top: 20px
+    margin-bottom: 20px
+    border: 0
+    border-top: 1px solid #eee
+    .space-letra-top-musicas
+        margin-top: 5px
+
+
+
+blockquote
+    background: $black
+    border-left: 5px solid red
+    margin: 1.5em 10px
+    padding: 0.5em 10px
+    quotes: "\201C""\201D""\2018""\2019"
+    font-size: 1.5em
+    padding: 30px 0 30px 21px
+    p
+        font-family: $font-family5
+        line-height: 1.3em
+        color: $white
+        display: inline
+
+
+    &:before
+        color: red
+        content: open-quote
+        font-size: 2em
+        line-height: 0.1em
+        vertical-align: -0.37em
+        margin-right: 1%
+
+    &:after
+        color: red
+        content: close-quote
+        font-size: 2em
+        line-height: 0.1em
+        vertical-align: -0.499em
+        margin-left: 1%
+
+
+    footer
+        margin-top: 10px
+        float: right
+
+        cite
+            font-style: italic
+            font-family: $font-family5
+            line-height: 1.3em
+            font-size: 0.85em
+            color: $white
+            padding-right: 30px
+            &:before
+                content: '\2014 \00A0'

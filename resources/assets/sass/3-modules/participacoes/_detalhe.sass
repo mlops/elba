@@ -1,0 +1,106 @@
+#participacoes-bg
+    +full
+    background-color: $white
+    margin: 0
+    padding: 0
+    .participacoes-dt
+        //background-color: red
+        +clearfix
+        margin-bottom: 2%
+        .participacoes-dt-subheader
+            color: $black
+            +span(16)
+            text-align: left
+            //background-color: #FFF
+            font-family: $font-family5
+            +font-size(30)
+            padding-right: 19px
+
+            .participacoes-dt-nome_disco
+                +span(13)
+                font-weight: $bold600
+                text-transform: uppercase
+                +breakpoint(0 $narrow)
+                    +span(13)
+                    +font-size(30)
+                +breakpoint($narrow $small)
+                    +span(13)
+                    +font-size(30)
+                +breakpoint($small $medium)
+                    +span(14)
+                    +font-size(40)
+            .participacoes-dt-ano
+                +span(3 last)
+                text-align: right
+                font-weight: $bold600
+                +breakpoint(0 $narrow)
+                    +span(3 last)
+                    +font-size(30)
+                +breakpoint($narrow $small)
+                    +span(3 last)
+                    +font-size(30)
+                +breakpoint($small $medium)
+                    +span(2 last)
+                    +font-size(40)
+    .participacoes-wrap
+        +span(16)
+        //background-color: green
+        .participacoes-tracks-item
+            border-bottom: 1px dotted black
+            +breakpoint(0 $narrow)
+                margin-top: 1%
+            +breakpoint($narrow $small)
+                margin-top: 2%
+            .participacoes-tracks-col-left
+                +span(5)
+                padding-top: 2%
+                height: 637px
+                //background-color: green
+                +breakpoint(0 $narrow)
+                    height: auto
+                +breakpoint($narrow $small)
+                    height: auto
+                .post-thumb
+                    width: 100%
+                    //background-color: red
+                +breakpoint(0 $narrow)
+                    +span(16)
+                    margin-top: 2%
+
+                +breakpoint($narrow $small)
+                    +span(16)
+                    margin-top: 2%
+
+            .participacoes-tracks-col-right
+                +span(11)
+                padding-top: 2%
+                //background-color: orange
+                +breakpoint(0 $narrow)
+                    +span(16)
+                +breakpoint($narrow $small)
+                    +span(16)
+                ul
+                    padding: 0
+                    margin: 0
+                    list-style: none
+                    li.track-listing-item
+                        list-style: none
+                        .stream-controls
+                            ul.playlist
+                                .compositor
+                                    font-family: $font-family5
+                                    +font-size(16)
+                                    margin-right: 5%
+                                    font-style: italic
+                                    margin-top: 8px
+                                    font-weight: $normal300
+                                .st-arrow
+                                    width: 50%
+
+
+                    .stream-letra
+                        overflow: hidden
+                        display: none
+                        width: 100%
+                        line-height: 150%
+                        letter-spacing: 0.1px

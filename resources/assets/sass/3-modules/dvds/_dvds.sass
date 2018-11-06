@@ -1,0 +1,90 @@
+#dvds
+    +full
+    padding: 0
+    margin: 0
+    margin-bottom: -7px
+    +clearfix
+    background-color: #FFF
+    .wrap-dvds
+        +with-layout(24 1/4 inside)
+            height: auto
+            +container
+            +pad(1)
+            header.h-dvds
+                h2.dvds-titulo
+                    font-family: $font-family5
+                    font-weight: $normal400
+                    +font-size(30)
+                    margin-left: 3%
+                p.dvds-resumo
+                    +font-size(20)
+                    font-family: $font-family5
+                    font-weight: $normal300
+                    margin-left: 3%
+            .dvds-lst
+                +span(24)
+                //background-color: blue
+                +clearfix
+                padding: 0
+                margin: 0
+                position: relative
+                +breakpoint(0 $narrow)
+                    display: block
+                .dvd-ano
+                    +span(1)
+                    +font-size(15)
+                    padding: 1%
+                    font-family: $font-family5
+                    font-weight: $normal400
+                    color: $white
+                    background-color: $black
+                    position: absolute
+                    +breakpoint(0 $narrow)
+                        +span(5)
+                        padding: 0.5% 0.2% 0.5% 1.9%
+                        +font-size(13)
+                    +breakpoint($narrow $small)
+                        display: none
+                    +breakpoint($small $medium)
+                        +span(1.5)
+                        +font-size(12)
+                        padding: 0.1% 0.1% 0.1% 0.5%
+                    +breakpoint($medium $wide)
+                        +span(1)
+                        +font-size(13)
+                        padding: 0.1% 0.1% 0.1% 0.5%
+                        ///background-color: green
+                    +breakpoint($wide $widee)
+                        +span(1)
+                        +font-size(13)
+                        padding: 0.1% 0.1% 0.1% 0.5%
+                        //background-color: blue
+                    +breakpoint($widee $wider)
+                        +span(1)
+                        +font-size(13)
+                        padding: 0.1% 0.1% 0.1% 0.5%
+
+                .dvd-capa
+                    +span(6)
+                    padding-top: span(1)
+                    padding-bottom: span(1)
+                    padding-left: span(1)
+                    +breakpoint(0 $narrow)
+                        +span(24)
+                    +breakpoint($narrow $small)
+                        +span(8)
+                    +breakpoint($small $medium)
+                        +span(8)
+                .dvd-nome
+                    width: span(24)
+                    //background-color: orange
+                    font-family: $font-family5
+                    font-weight: $normal400
+                    text-decoration: none
+                    color: $black
+                    +font-size(15)
+                    +breakpoint($narrow $small)
+                        +font-size(11)
+                    +breakpoint($small $medium)
+                        +font-size(15)
+

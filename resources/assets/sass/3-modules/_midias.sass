@@ -1,0 +1,491 @@
+%tituloleft
+    font-family: $font-family2
+    +font-size(50)
+    color: $white
+    +span(16)
+    margin: 0 auto
+    text-align: center
+    font-weight: $normal400
+    text-transform: uppercase
+
+%tituloright
+    font-family: $font-family2
+    +font-size(50)
+    color: $white
+    +span(16)
+    margin: 0 auto
+    text-align: center
+    font-weight: $normal400
+    padding-left: 195px
+    text-transform: uppercase
+
+
+=cat-titulo--left
+    @extend %tituloleft
+=cat-titulo--right
+    @extend %tituloright
+
+///fim extendes 
+
+
+.container-categorias
+    +full
+    margin: 0 auto
+    padding: 0
+    +clearfix
+    .wrap-categorias
+        +full
+        background-image: url("/images/tela02-min.jpg")
+        background-repeat: no-repeat
+        background-attachment: local
+        background-position: center top
+        background-size: 100%
+        padding-bottom: 0
+        margin: 0
+        padding: 0
+        //background-color: orange
+        +breakpoint(0 $narrow)
+            background-image: none
+            background-image: linear-gradient(to bottom, darken($orange, 13), $red 100%)
+        +breakpoint($narrow $small)
+            background-image: linear-gradient(to bottom, darken($orange, 13), $red 100%)
+        +breakpoint($small $medium)
+            background-size: 100%
+        +breakpoint($medium $wide)
+            background-size: 100%
+        +breakpoint($wide $widee)
+            background-size: 100%
+        +breakpoint($widee $wider)
+            background-size: 100%
+        +breakpoint($wider $widerr)
+            background-size: 100%
+
+
+
+
+        a.carreira
+            display: inline-block
+            position: relative
+            +span(8)
+            //background-color: blue
+            +breakpoint(0 $narrow)
+                +span(16)
+            +breakpoint($narrow $small)
+                +span(8)
+            +breakpoint($small $medium)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+            +breakpoint($medium $wide)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+            +breakpoint($wide $widee)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+            +breakpoint($widee $wider)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+
+            +breakpoint($wider $widerr)
+                +span(8)
+
+            h2
+                position: absolute
+                clear: left
+                display: block
+                top: 100px
+                left: 0
+                right: 0
+                bottom: 0
+                margin: 0
+                background-color: rgba($dark,0.5)
+                opacity: 0
+                transition: 1s
+                +cat-titulo--left
+                +breakpoint(0 $narrow)
+                    top: 80%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 2%
+                +breakpoint($narrow $small)
+                    top: 70%
+                    opacity: 1
+                    +font-size(30)
+                +breakpoint($small $medium)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+                +breakpoint($medium $wide)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+                +breakpoint($wide $widee)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+                +breakpoint($widee $wider)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+
+
+            img
+                +breakpoint(0 $narrow)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($narrow $small)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($small $medium)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($medium $wide)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($medium $wide)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($wide $widee)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($widee $wider)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+            &:hover
+                h2
+                    opacity: 1
+
+        a.dvds
+            display: inline-block
+            position: relative
+            +span(8)
+            //background-color: blue
+            +breakpoint(0 $narrow)
+                +span(16)
+            +breakpoint($narrow $small)
+                +span(8)
+            +breakpoint($small $medium)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+            +breakpoint($medium $wide)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+            +breakpoint($wide $widee)
+                +span(8)
+            +breakpoint($widee $wider)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+            +breakpoint($wider $widerr)
+                +span(8)
+                //background-color: rgba(blue,0.5)
+
+            h2
+                position: absolute
+                clear: left
+                display: block
+                top: 100px
+                left: 0
+                right: 0
+                bottom: 0
+                margin: 0
+                background-color: rgba($dark,0.5)
+                opacity: 0
+                transition: 1s
+                +cat-titulo--left
+                +breakpoint(0 $narrow)
+                    top: 80%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 2%
+                +breakpoint($narrow $small)
+                    top: 70%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 5%
+                +breakpoint($small $medium)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 23%
+                +breakpoint($medium $wide)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+                +breakpoint($wide $widee)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+                +breakpoint($widee $wider)
+                    +font-size(35)
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                    padding-top: 0
+                    padding-top: 23%
+
+
+
+            img
+                +breakpoint(0 $narrow)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($narrow $small)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($small $medium)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($medium $wide)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($wide $widee)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+                +breakpoint($widee $wider)
+                    visibility: hidden
+                    width: 85%
+                    margin: 0
+                    padding: 0
+            &:hover
+                h2
+                    opacity: 1
+        a.participacoes
+            display: inline-block
+            position: relative
+            +span(8)
+            //background-color: blue
+            +breakpoint(0 $narrow)
+                +span(16)
+            +breakpoint($narrow $small)
+                +span(8)
+            +breakpoint($small $medium)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($medium $wide)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($wide $widee)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($widee $wider)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($wider $widerr)
+                +span(8)
+
+            h2
+                position: absolute
+                clear: left
+                display: block
+                top: 100px
+                left: 0
+                right: 0
+                bottom: 0
+                margin: 0
+                background-color: rgba($dark,0.5)
+                opacity: 0
+                transition: 1s
+                +cat-titulo--left
+                +breakpoint(0 $narrow)
+                    top: 80%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 2%
+                +breakpoint($narrow $small)
+                    top: 70%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 5%
+                +breakpoint($small $medium)
+                    +font-size(35)
+                    padding-top: 27%
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                +breakpoint($medium $wide)
+                    +font-size(35)
+                    padding-top: 27%
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                +breakpoint($wide $widee)
+                    +font-size(35)
+                    padding-top: 27%
+                    top: 0
+                    background-color: rgba($dark,0.5)
+                +breakpoint($widee $wider)
+                    +font-size(35)
+                    padding-top: 27%
+                    top: 0
+                    background-color: rgba($dark,0.5)
+
+
+            img
+                +breakpoint(0 $narrow)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($narrow $small)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($small $medium)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+                +breakpoint($medium $wide)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+                +breakpoint($wide $widee)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+                +breakpoint($widee $wider)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+            &:hover
+                h2
+                    opacity: 1
+        a.singles
+            display: inline-block
+            position: relative
+            +span(8)
+            //background-color: blue
+            +breakpoint(0 $narrow)
+                +span(16)
+            +breakpoint($narrow $small)
+                +span(8)
+            +breakpoint($small $medium)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($medium $wide)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($wide $widee)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($widee $wider)
+                +span(8)
+                //background-color: rgba(green,0.5)
+            +breakpoint($wider $widerr)
+                +span(8)
+
+
+            h2
+                position: absolute
+                clear: left
+                display: block
+                top: 100px
+                left: 0
+                right: 0
+                bottom: 0
+                margin: 0
+                background-color: rgba($dark,0.5)
+                opacity: 0
+                transition: 1s
+                +cat-titulo--left
+                +breakpoint(0 $narrow)
+                    top: 80%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 2%
+                +breakpoint($narrow $small)
+                    top: 70%
+                    opacity: 1
+                    +font-size(30)
+                    padding-top: 5%
+                +breakpoint($small $medium)
+                    +font-size(35)
+                    top: 0
+                    padding-top: 27%
+                    background-color: rgba($dark,0.5)
+                +breakpoint($medium $wide)
+                    +font-size(35)
+                    top: 0
+                    padding-top: 27%
+                    background-color: rgba($dark,0.5)
+                +breakpoint($wide $widee)
+                    +font-size(35)
+                    top: 0
+                    padding-top: 27%
+                    background-color: rgba($dark,0.5)
+                +breakpoint($widee $wider)
+                    +font-size(35)
+                    top: 0
+                    padding-top: 27%
+                    background-color: rgba($dark,0.5)
+
+
+
+            img
+                +breakpoint(0 $narrow)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($narrow $small)
+                    margin: 0
+                    padding: 0
+                    width: 100%
+                +breakpoint($small $medium)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+                +breakpoint($medium $wide)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+                +breakpoint($wide $widee)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+                +breakpoint($widee $wider)
+                    visibility: hidden
+                    width: 80%
+                    margin: 0
+                    padding: 0
+            &:hover
+                h2
+                    opacity: 1
+
+
+
+
+
+      

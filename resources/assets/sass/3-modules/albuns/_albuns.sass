@@ -1,0 +1,20 @@
+#albuns
+    width: span(full)
+    color: $red
+    //background-color: $aqua
+    margin: 0
+    padding: 0
+.album-top
+	img
+		width: 100%
+.gallery
+	+clearfix
+	width: span(15)
+	margin-left: gutter(12)
+	margin-right: 0
+	.gallery__item
+		+span(4 of 16)
+		margin-bottom: gutter(16);
+		&:nth-child(5n)
+			+last
+		

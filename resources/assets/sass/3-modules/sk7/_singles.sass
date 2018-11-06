@@ -1,0 +1,59 @@
+#singles
+    +full
+    +clearfix
+    background-color: #FFF
+    .wrap-singles
+        +container
+        header.h-singles
+            +container
+            margin-bottom: 2%
+            margin-top: 2%
+            color: $black
+            +pad(1)
+            h2.singles-titulo
+                font-family: $font-family5
+                font-weight: $normal400
+                +font-size(30)
+            p.singles-resumo
+                +font-size(20)
+                font-family: $font-family5
+                font-weight: $normal300
+
+        .singles-itens
+            +span(3.2)
+            margin: 0 auto
+            padding: 0
+            margin-bottom: -7px
+            position: relative
+            padding: 10px
+            +breakpoint(0 $narrow)
+                +span(8)
+                padding: 0
+                margin-bottom: -7px
+            +breakpoint($narrow $small)
+                +span(8.1)
+                padding: 0
+                margin-bottom: -7px
+                margin-right: -5px
+            img
+                min-width: 100%
+                width: 100%
+            .description
+                position: absolute /* absolute position (so we can position it where we want)*/
+                bottom: 17px //position will be on bottom
+                margin-left: 10px
+                display: none /* hide it */
+                /* styling bellow */
+                background-color: $black
+                font-family: $font-family5
+                +font-size(20)
+                color: $white
+                font-weight: $normal300
+                +breakpoint(0 $narrow)
+                    +font-size(12)
+                +breakpoint($narrow $small)
+                    +font-size(15)
+            .description_content
+                padding: 10px
+
+        

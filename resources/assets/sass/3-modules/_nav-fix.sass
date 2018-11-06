@@ -1,0 +1,314 @@
+#fixedbar
+  display: none
+  position: fixed
+  top: 0
+  -webkit-transform: translateZ(0)
+  z-index: 99999
+  +full
+  padding: 0
+  background-color: $dark
+  .nav-container
+    .wrap-fixed
+      +container
+      background-color: $dark
+      .logo
+        +span(3)
+        padding-top: 10px
+        padding-left: 20px
+        +breakpoint(0 $narrow)
+          +span(16)
+        +breakpoint($narrow $small)
+          +span(9)
+        +breakpoint($small $medium)
+          +span(5)
+        +breakpoint($medium $wide)
+          +span(5)
+        +breakpoint($wide $widee)
+          +span(3.3)
+          //background-color: blue
+        +breakpoint($widee $wider)
+          +span(3.2)
+          //background-color: blue
+        img
+          width: 100%
+          max-width: 100%
+          
+      .social
+        text-align: center
+        +span(3 last)
+        position: relative
+        margin-top: 0
+        +breakpoint($small $medium)
+          +span(5 last)
+          padding-top: 0
+          // background-color: $olive
+        +breakpoint($medium $wide)
+          +span(5 last)
+          margin-top: -10px
+          // background-color: $lime
+
+        .social-nav
+          margin: 10px 0 0 0
+          padding: 0
+          +breakpoint($small $medium)
+            margin: 0
+            padding: 0
+          +breakpoint($wide $widee)
+            margin: 0
+            padding: 0
+          +breakpoint($widee $wider)
+            margin: 0
+            padding: 0
+          .social-nav--item
+            list-style: none
+            display: inline-block
+            width: 20%
+            float: right
+            height: 60px
+            padding: 24px 0 0 0
+            margin-right: -2px
+            +breakpoint($wide $widee)
+              height: 60px
+            +breakpoint($widee $wider)
+              height: 60px
+            &:first-child
+              padding-right: 20px
+            .fa-facebook
+              &:before
+                content: '\f09a'
+                @extend .social-ex
+            .fa-twitter
+              &:before
+                content: '\f099'
+                @extend .social-ex
+            .fa-youtube
+              &:before
+                content: '\f167'
+                @extend .social-ex
+            .fa-instagram
+              &:before
+                content: '\f16d'
+                @extend .social-ex
+            .fa-flickr
+              &:before
+                content: '\f16e'
+                @extend .social-ex
+        +breakpoint(0 $narrow)
+          display: none
+        +breakpoint($narrow $small)
+          display: none
+
+      .menu-mobile-toggle
+        display: none
+        width: 65px
+        height: 50px
+        margin-right: 10px
+        margin-top: 10px
+        padding: 10px
+        align-items: center
+        float: right
+        cursor: pointer
+        span,
+        span:before,
+        span:after
+          content: ""
+          display: block
+          height: 3px
+          width: 100%
+          background: red
+          position: relative
+          +single-transition(all, .3s, ease-in-out)
+        span:before
+          top: 15px
+        span:after
+          bottom: 17px
+        &:hover span
+          background: transparent
+
+        &:hover span:before,
+        &:hover span:after
+          transform-origin: center
+          transform: rotate(45deg)
+          top: 0
+
+        &:hover span:before
+          transform: rotate(-45deg)
+
+      +breakpoint(0 $narrow)
+        .menu-mobile-toggle
+          display: flex
+          margin-bottom: 0
+          margin-top: 0
+          margin-right: 5px
+      +breakpoint($narrow $small)
+        .menu-mobile-toggle
+          display: flex
+          margin-bottom: 0
+          margin-top: 20px
+
+
+
+      .main-nav
+        +span(9 first)
+        margin-top: 0
+        text-align: center
+
+        +breakpoint(0 $narrow)
+          +full
+          text-align: center
+          margin: 0
+          // background-color: $yellow
+        +breakpoint($narrow $small)
+          +full
+          text-align: center
+          // margin: 0
+          // background-color: $orange
+        +breakpoint($small $medium)
+          +span(16)
+          text-align: center
+          // background-color: $fuchsia
+        +breakpoint($medium $wide)
+          +span(16)
+          text-align: center
+          //background-color: $green
+        +breakpoint($wide $widee)
+          +span(9 last)
+          margin-top: 20px
+          //background-color: $maroon
+        +breakpoint($widee $wider)
+          +span(9.5 last)
+          margin-top: 20px
+          //background-color: blue
+
+        .main-nav-menu
+          margin: 0
+          padding: 0
+          display: inline-block
+          +breakpoint(0 $narrow)
+            display: inline-block
+            margin-top: 0
+            padding: 0
+            text-align: center
+            display: none
+          +breakpoint($narrow $small)
+            margin-top: 0
+            display: inline-block
+            +full
+            display: none
+          +breakpoint($small $medium)
+            padding-bottom: 0
+            padding-top: 0
+          +breakpoint($medium $wide)
+            padding-bottom: 0
+            padding-top: 0
+          +breakpoint($wide $widee)
+            padding-top: 0
+          +breakpoint($widee $wider)
+            padding-top: 0
+          +breakpoint($wider $widerr)
+            margin-left: 50px
+          
+          .main-nav-menu-item
+            display: inline-block
+            font-family: $font-family2
+            text-align: center
+            +font-size(30)
+            margin-right: -8px
+            width: 158px
+            padding-top: 25px
+            &:last-child
+              padding-right: 0
+            a
+              width: 100px
+              height: 28px
+              text-align: center
+              padding: 10px 0px 5px 0px
+              +single-transition(all, .5s, ease-out)
+              &:hover
+                color: red
+              &:active
+                color: red
+            +breakpoint(0 $narrow)
+              display: block
+              +font-size(21)
+              padding-top: 2%
+              padding-bottom: 10px
+              width: 100%
+              a
+                width: 100%
+                height: 35px
+                padding: 5px
+            +breakpoint($narrow $small)
+              display: inline-block
+              +font-size(20)
+              margin: 0
+              padding-top: 2%
+              padding-bottom: 10px
+              width: 125px
+              a
+                width: 100%
+                height: 35px
+                margin-right: 0
+            +breakpoint($small $medium)
+              +font-size(18)
+              list-style: none
+              display: inline-block
+              padding-top: 0
+              vertical-align: middle
+              width: 118px
+              a
+                width: 100%
+                height: 35px
+                padding: 5px
+                display: block
+            
+            +breakpoint($medium $wide)
+              +font-size(19)
+              list-style: none
+              display: inline-block
+              vertical-align: middle
+              padding-top: 0
+              a
+                width: 100%
+                height: 35px
+                padding: 5px
+                display: block
+            +breakpoint($wide $widee)
+              +font-size(19)
+              list-style: none
+              display: inline-block
+              width: 111.5px
+              vertical-align: middle
+              margin: 0
+              padding: 0
+              a
+                display: block
+                width: 100%
+                height: 35px
+                padding: 5px
+            +breakpoint($widee $wider)
+              +font-size(19)
+              list-style: none
+              display: inline-block
+              width: 125px
+              vertical-align: middle
+              margin: 0
+              padding: 0
+              a
+                display: block
+                width: 100%
+                height: 35px
+                padding: 5px
+            +breakpoint($wider $widerr)
+              +font-size(21)
+              list-style: none
+              display: inline-block
+              width: 125.4px
+              vertical-align: middle
+              margin: 0
+              padding: 0
+              a
+                display: block
+                width: 100%
+                height: 35px
+                padding: 5px

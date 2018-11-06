@@ -1,0 +1,79 @@
+AddHandler php56-script .php
+#aqui suPHP_ConfigPath caminho onde esta o php.ini
+suPHP_ConfigPath /home/elbaramalho/ 
+DirectoryIndex index.php default.html index.html
+
+<IfModule mod_rewrite.c>
+  <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine on
+
+    RewriteCond %{REQUEST_URI} !^
+    RewriteRule ^(.*)$ /$1 [L]
+
+
+
+# Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+</IfModule>
+
+
+
+
+<IfModule mod_headers.c>
+   Header set Access-Control-Allow-Origin "*"
+   Header set Accept-Ranges: bytes
+</IfModule>
+
+
+<IfModule mod_mime.c>
+    AddType text/javascript js
+    AddType application/x-shockwave-flash swf
+
+    # AddType TYPE/SUBTYPE EXTENSION
+     
+    AddType audio/mpeg mp3
+    AddType audio/mp4 m4a
+    AddType audio/ogg ogg
+    AddType audio/ogg oga
+    AddType audio/webm webma
+    AddType audio/wav wav
+     
+    AddType video/mp4 mp4
+    AddType video/mp4 m4v
+    AddType video/ogg ogv
+    AddType video/webm webm
+    AddType video/webm webmv
+
+
+
+</IfModule>
+
+
+
+
+############################################
+## enable apache served files compression
+## http://developer.yahoo.com/performance/rules.html#gzip
+
+# Insert filter
+#SetOutputFilter DEFLATE
+
+# Netscape 4.x has some problems…
+#BrowserMatch ^Mozilla/4 gzip-only-text/html
+
+# Netscape 4.06-4.08 have some more problems
+#BrowserMatch ^Mozilla/4\.0[678] no-gzip
+
+# MSIE masquerades as Netscape, but it is fine
+#BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+# Don’t compress images
+#SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+
+# Make sure proxies don’t deliver the wrong content
+Header append Vary User-Agent env=!dont-vary

@@ -1,0 +1,22 @@
+{
+  "name": "elba",
+  "version": "0.0.0",
+  "authors": [
+    "Andre lops <maplops@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.2",
+    "fontawesome": "~4.3.0",
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.0"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "~2.6.1"
+  }
+}
