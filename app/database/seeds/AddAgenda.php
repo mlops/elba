@@ -186,13 +186,7 @@ class AddAgenda extends Seeder
             'local' => 'RIO DE JANEIRO (Marina da Glória)',
             'fb' => '',
         ]);
-        Agenda::create([
-            'startdate' => '2018-12-02 22:00:00',
-            'evento' => 'CANTATA DE NATAL (participação especia)',
-            'estado' => 'PE',
-            'local' => 'RECIFE',
-            'fb' => '',
-        ]);
+
         Agenda::create([
             'startdate' => '2018-12-09 22:00:00',
             'evento' => 'O GRANDE ENCONTRO',
@@ -237,9 +231,9 @@ class AddAgenda extends Seeder
         ]);
         Agenda::create([
             'startdate' => '2018-12-31 22:00:00',
-            'evento' => 'REVEILLÓN',
+            'evento' => 'RÉVEILLON',
             'estado' => 'PE',
-            'local' => 'ECIFE (Praia de Boa Viagem)',
+            'local' => 'RECIFE (Praia de Boa Viagem)',
             'fb' => '',
         ]);
     }
