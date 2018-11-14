@@ -188,7 +188,7 @@ class AddAgenda extends Seeder
         ]);
         Agenda::create([
             'startdate' => '2018-12-02 22:00:00',
-            'evento' => 'CATATA DE NATAL DA CAIXA(Participação especial)',
+            'evento' => 'CANTATA DE NATAL DA CAIXA(Participação especial)',
             'estado' => 'PE',
             'local' => 'RECIFE',
             'fb' => '',
