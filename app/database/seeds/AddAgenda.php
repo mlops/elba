@@ -156,13 +156,13 @@ class AddAgenda extends Seeder
             'local' => 'JUAZEIRO DO NORTE (SESC Cariri)',
             'fb' => '',
         ]);
-        Agenda::create([
-            'startdate' => '2018-11-17 22:00:00',
-            'evento' => 'ELBA + GERALDO + XANGAI',
-            'estado' => 'PE',
-            'local' => 'PETROLINA (Arena Iate Clube)',
-            'fb' => '',
-        ]);
+        // Agenda::create([
+        //     'startdate' => '2018-11-17 22:00:00',
+        //     'evento' => 'ELBA + GERALDO + XANGAI',
+        //     'estado' => 'PE',
+        //     'local' => 'PETROLINA (Arena Iate Clube)',
+        //     'fb' => '',
+        // ]);
         Agenda::create([
             'startdate' => '2018-11-24 22:00:00',
             'evento' => 'O GRANDE ENCONTRO',
@@ -184,6 +184,13 @@ class AddAgenda extends Seeder
             'evento' => 'O GRANDE ENCONTRO',
             'estado' => 'RJ',
             'local' => 'RIO DE JANEIRO (Marina da Glória)',
+            'fb' => '',
+        ]);
+        Agenda::create([
+            'startdate' => '2018-12-02 22:00:00',
+            'evento' => 'CATATA DE NATAL DA CAIXA(Participação especial)',
+            'estado' => 'PE',
+            'local' => 'RECIFE',
             'fb' => '',
         ]);
 
